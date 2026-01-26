@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>personal portfolio</title>
+  <meta name="description" content="unnati sangraula i am self obsessed im almost narcissistic">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="/styles/global.css" >
+  <link rel="stylesheet" href="/styles/hero.css">
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/about.css">
+  <link rel="stylesheet" href="skills.css">
+  <link rel="stylesheet" href="/styles/sidebar.css">
+</head>
+<body> 
+<nav class="sidebar">
+  <i id="hamburger" class="fa-solid fa-bars sidebar__hamburger"></i>
+
+  <div class="sidebar__content">
+    <img class="sidebar__image" src="/assets/sidebar.jpg" alt="Profile Image" />
+    <h1 class="sidebar__name">Unnati  Sangraula</h1>
+    <h2 class="sidebar__job">Developer <span>in Nepal</span></h2>
+
+    <ul class="sidebar__list">
+      <li class="sidebar__list__item">
+        <a href="#hero">home</a>
+      </li>
+      <li class="sidebar__list__item">
+        <a href="#about">about</a>
+      </li>
+      <li class="sidebar__list__item">
+        <a href="#skills">skills</a>
+      </li>
+      <li class="sidebar__list__item">
+        <a href="#contact">contact</a>
+      </li>
+    </ul>
+
+    <p class="sidebar__copyright">
+      &copy; 2026 All rights reserved | Made with &#128150; by
+      <span>Unnati</span>
+    </p>
+  </div>
+</nav>
+<section id="hero">
+  <h1 class="hero__job">
+    Hi! <br />
+    I am Unnati Sangraula<br />
+    
+  </h1>
+  <h2 class="hero__edu">Computer Engineering Student</h2>
+  <button class="hero__btn">Contact me <i class="fa-solid fa-message "></i></button>
+</section>
+<section id="skills" class="section">
+  <span class="section__title">my speciality</span>
+  <span class="section__subtitle">my skills</span>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores
+    ducimus id consequatur? Natus obcaecati.
+  </p>
+
+  <div class="skill__box">
+    <div class="skill">
+      <span>Photoshop</span>
+      <div class="skill__percent__box">
+        <div class="skill__percent">
+          <span>75%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>React Js</span>
+      <div class="skill__percent__box">
+        <div
+          class="skill__percent"
+          style="width: 60%; background: #ec5453; color: #ec5453"
+        >
+          <span>60%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>HTML5</span>
+      <div class="skill__percent__box">
+        <div
+          class="skill__percent"
+          style="width: 85%; background: #f9bf3f; color: #f9bf3f"
+        >
+          <span>85%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>CSS3</span>
+      <div class="skill__percent__box">
+        <div
+          class="skill__percent"
+          style="width: 90%; background: #a84cb8; color: #a84cb8"
+        >
+          <span>90%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>Wordpress</span>
+      <div class="skill__percent__box">
+        <div
+          class="skill__percent"
+          style="width: 70%; background: #2fa499; color: #2fa499"
+        >
+          <span>70%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span>SEO</span>
+      <div class="skill__percent__box">
+        <div
+          class="skill__percent"
+          style="width: 80%; background: #4054b2; color: #4054b2"
+        >
+          <span>80%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <span class="section__title">about us</span>
+  <h2 class="section__subtitle">who am i?</h2>
+
+  <p class="about__description">
+    <strong>Hi! I am Unnati Sangraula</strong>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sint
+    dolorem. Animi nemo officia dolores harum.
+  </p>
+
+  <p class="about__description">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius soluta
+    laudantium, illo iusto aliquid recusandae.
+  </p>
+
+  <div class="about__skills">
+    <div class="about__box">
+      <i class="fa-solid fa-ear-listen"></i>
+      <h3>Graphic design</h3>
+    </div>
+    <div class="about__box">
+      <i class="fa-solid fa-globe"></i>
+      <h3>web design</h3>
+    </div>
+    <div class="about__box">
+      <i class="fa-solid fa-database"></i>
+      <h3>Software</h3>
+    </div>
+    <div class="about__box">
+      <i class="fa-solid fa-mobile"></i>
+      <h3>application</h3>
+    </div>
+  </div>
+
+  <div class="about__happy">
+    <h2>I am happy to know you that 300+ projects done successfully!</h2>
+    <button>hire me</button>
+  </div>
+</section>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("sidebar__hamburger__translate");
+  });
+</script>
+</body>
+</html>
