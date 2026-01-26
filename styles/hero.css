@@ -1,6 +1,6 @@
 #hero {
   background-color: #efe7ec;
-  background-image: url("meaf.jpg");
+  background-image: url("/assets/me.jpg");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
