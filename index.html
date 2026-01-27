@@ -58,7 +58,7 @@
     
   </h1>
   <h2 class="hero__edu">Computer Engineering Student</h2>
-  <button class="hero__btn">Contact me <i class="fa-solid fa-message "></i></button>
+  <button class="hero__btn" id="hero__btn">Contact me<i class="fa-solid fa-message "></i></button>
 </section>
 <section id="skills" class="section">
   <span class="section__title">my speciality</span>
@@ -150,8 +150,8 @@
   </p>
 
   <p class="about__description">
-    I like to leave an impression, make people smile, and keep things interesting. 
-    Life’s too short to blend in, so I bring energy, creativity, and a little bit of chaos wherever I go. Simple? Not really. Fun? Absolutely.
+   a Computer Engineering student based in Nepal, where I bridge the gap between technical innovation and artistic vision.
+    My work embodies the fusion of logical precision with creative flair.
   </p>
 
   <div class="about__skills">
@@ -209,6 +209,11 @@
   const hamburger = document.getElementById("hamburger");
   hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("sidebar__hamburger__translate");
+  });
+
+  const contactBtn = document.getElementById("hero__btn");
+  contactBtn.addEventListener("click", () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   });
 </script>
 </body>
